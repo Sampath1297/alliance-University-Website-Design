@@ -1,0 +1,149 @@
+/* public/styles.css */
+
+/* Basic Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6e6fa;
+    
+
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 100px; /* Adjust the size as needed */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Slider Section */
+.slider {
+    width: 100%;
+    height: 300px; /* Increased height */
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.slides-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 33%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    line-height: 300px; /* Matches slider height */
+    border-radius: 15px;
+     /* Rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Add different background colors for each slide */
+    margin: 15px;
+}
+
+/* About Section */
+.about-section, .form-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Form Section */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Photos Section */
+.photo-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.photo-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.photo {
+    border-radius: 8px;
+    object-fit: cover;
+    display: none; /* Initially hidden */
+    transition: all 1s ease-in-out;
+}
+
+/* Different sizes for each photo */
+.photo:nth-child(1) {
+    width: 300px;
+    height: 200px;
+}
+
+.photo:nth-child(2) {
+    width: 250px;
+    height: 180px;
+}
+
+.photo:nth-child(3) {
+    width: 200px;
+    height: 150px;
+}
+
+.photo:nth-child(4) {
+    width: 350px;
+    height: 220px;
+}
